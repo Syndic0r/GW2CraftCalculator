@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GW2CraftCalculator": {
+      "commandName": "Project",
+      "commandLineArgs": "mysticforge ui -l de"
+    }
+  }
+}

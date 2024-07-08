@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gw2CraftCalculator.Interfaces\Gw2CraftCalculator.Interfaces.csproj" />
+    <ProjectReference Include="..\GW2CraftCalculator.Utils\GW2CraftCalculator.Utils.csproj" />
+    <ProjectReference Include="..\GW2CraftingCalculator.Models\GW2CraftCalculator.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="GW2CraftCalculatorLocalDatabase.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

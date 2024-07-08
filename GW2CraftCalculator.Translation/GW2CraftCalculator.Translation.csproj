@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.EnumMapping" Version="3.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gw2CraftCalculator.Interfaces\Gw2CraftCalculator.Interfaces.csproj" />
+    <ProjectReference Include="..\GW2CraftCalculator.Utils\GW2CraftCalculator.Utils.csproj" />
+    <ProjectReference Include="..\GW2CraftingCalculator.Models\GW2CraftCalculator.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="de.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="en.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
