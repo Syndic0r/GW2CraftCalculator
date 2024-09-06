@@ -86,7 +86,7 @@ public class LoggerFactory
             return;
         }
 
-        string logFileScheme = "log-.txt";
+        const string logFileScheme = "log-.txt";
         string logFilePath = Path.Combine(path!, logFileScheme);
         _logFilePath = logFilePath;
     }

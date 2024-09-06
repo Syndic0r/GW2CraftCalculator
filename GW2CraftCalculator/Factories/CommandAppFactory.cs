@@ -31,7 +31,7 @@ public class CommandAppFactory : ICommandAppFactory
             config.SetExceptionHandler((e, _) => _exceptionHandler.HandleException(e));
             config.AddBranch<EmptySetting>("mysticforge", mf =>
             {
-                mf.AddCommand<MysticForgeRecipeUiCommand>("ui").WithExample("mysticforge", "gui", "-l", "en", "-f");
+                mf.AddCommand<MysticForgeRecipeUiCommand>("ui").WithExample("mysticforge", "ui", "-l", "en", "-f");
                 mf.AddCommand<MysticForgeRecipeCommand>("recipes").WithExample("mysticforge", "recipes", "-l", "en", "-f", "\"item Types=BasicItems,refined Items,fine_items, " +
                     "rareItems ;item_groups=wood,metal,totem,Blood,onyx;rarities=basic , fine,rare,EXotiC;Tiers=t2,T3,4,T5,6;Itemnames=Ore,Hard,Small,Vial of Thick,Lodestone,of_powerful\"");
             });

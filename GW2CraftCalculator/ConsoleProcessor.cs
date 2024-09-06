@@ -755,7 +755,7 @@ public class ConsoleProcessor : IConsoleProcessor
 
     private static async Task ConfigureProgressContext(ProgressContext ctx, string description, params Task[] tasks)
     {
-        double maxProgress = 100;
+        const double maxProgress = 100;
         ProgressTask totalProgressTask = ctx.AddTask(description, maxValue: maxProgress);
 
         double maxTaskProgress = maxProgress / tasks.Length;
